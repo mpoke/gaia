@@ -18,7 +18,7 @@ pull_request_rules:
           {{ title }} (#{{ number }})
           {{ body }}
 
-  - name: Automatic merge on approval to the main branch
+  - name: Automatic merge on one approval for merfigy PRs on release branches
     conditions:
       - "#approved-reviews-by>=0"
       - label=A:automerge
